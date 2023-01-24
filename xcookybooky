@@ -1,0 +1,26 @@
+LaTeX Recipe Template for xcookybooky
+
+\begin{recipe}[bakingtemperature=\protect\bakingtemperature{fanoven=\unit[230]{\textcelsius},topbottomheat=\unit[195]{\textcelsius}, topheat=\unit[195]{\textcelsius}, bottomheat, gasstove=Stufe 2}},preparationtime = {\unit[30]{Min}}, bakingtime = {\unit[1]{Std}}, portion = 4 portions,calory = {\unit[4]{kJ}},source = My neighbour Sarah]{Currywurst}
+%%or bakingtemperature={\unit[225]{\textcelsius}}
+\introduction{Text which appears befor the recipe, after the title and times}
+\ingredients{
+2 Tafeln & dunkle Schokolade\\
+%& (über \unit[70]{\%})\\
+3 & Eier\\
+\multicolumn{2}{l}{\textbf{Deckschicht}}\\
+\unit[200]{ml} & Sahne\\
+\unit[40]{g} & Zucker\index{Zucker}\\
+\unit[50]{g} & Butter}
+\preparation{
+\step This is the first step for cooking a brilliant meal.
+\step The second step follows...
+\step and so on
+\step Enjoy your meal!
+}
+\hint{Hallo Welt}
+%% small picture of food
+\graph{small = Bilder/Zopf,smallpicturewidth = 0.3\textwidth,big = erdbeere,bigpicturewidth = 0.6\textwidth}
+%%Background does not work for me, don't know why
+%\setBackgroundPicture[x = 2cm,y = -1cm,width=\paperwidth-3cm,height,orientation=pagecenter]{Bilder/Zopf} % filepath
+\end{recipe}
+\clearpage % clean up, next recipe next page
